@@ -273,5 +273,8 @@
 	<modules>
 		<module>manage</module>
     <module>common</module>
+    <module>system</module>
+    <module>system-api</module>
+    <module>system-simple</module>
   </modules>
 </project>
