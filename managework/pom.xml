@@ -1,5 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.paytong.platform.manager</groupId>
@@ -23,12 +23,19 @@
 		<project.account.version>1.0.0-SNAPSHOT</project.account.version>
 		<git.project>https://github.com/dmcguojia/member.git</git.project>
 	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.1</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
 	<scm>
 		<connection>scm:git://${git.project}}</connection>
 		<developerConnection>scm:git://${git.project}</developerConnection>
 	</scm>
 	<build>
-
 		<resources>
 			<resource>
 				<directory>src/main/java</directory>
@@ -265,5 +272,6 @@
 	</distributionManagement>
 	<modules>
 		<module>manage</module>
-	</modules>
+    <module>common</module>
+  </modules>
 </project>
